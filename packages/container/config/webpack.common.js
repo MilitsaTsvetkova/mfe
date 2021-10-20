@@ -1,3 +1,5 @@
+const HtmlWebpackPlugIn = require('html-webpack-plugin')
+
 module.exports = {
     module: {
         rules: [
@@ -15,5 +17,10 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugIn({
+            template: './public/index.html'
+        })
+    ]
 }
