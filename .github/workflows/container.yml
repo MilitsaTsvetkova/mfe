@@ -4,14 +4,14 @@ on:
     branches:
       - main
     paths:
-      - 'packages/container/**'
+      - "packages/container/**"
 defaults:
   run:
     working-directory: packages/container
 
 jobs:
   build:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
